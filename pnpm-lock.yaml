@@ -54,6 +54,7 @@ importers:
       postcss: ^8.4.21
       react: 18.2.0
       react-dom: 18.2.0
+      tailwind-config: workspace:*
       tailwindcss: ^3.2.7
       tsconfig: workspace:*
       typescript: ^4.5.3
@@ -72,6 +73,7 @@ importers:
       eslint: 7.32.0
       eslint-config-custom: link:../../packages/eslint-config-custom
       postcss: 8.4.21
+      tailwind-config: link:../../packages/tailwind-config
       tailwindcss: 3.2.7_postcss@8.4.21
       tsconfig: link:../../packages/tsconfig
       typescript: 4.9.5
@@ -92,6 +94,9 @@ importers:
       eslint-plugin-react: 7.31.8_eslint@7.32.0
     devDependencies:
       typescript: 4.9.5
+
+  packages/tailwind-config:
+    specifiers: {}
 
   packages/tsconfig:
     specifiers: {}
