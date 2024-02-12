@@ -36,6 +36,9 @@ COPY turbo.json turbo.json
 # ARG TURBO_TOKEN
 # ENV TURBO_TOKEN=$TURBO_TOKEN
 
+RUN touch .env
+RUN echo NEXT_PUBLIC_DOCS_URL=http://docs:3000 >> .env
+
 RUN yarn turbo build --filter=web...
 
 FROM base AS runner

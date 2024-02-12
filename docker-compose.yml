@@ -2,6 +2,7 @@ version: "3"
 
 services:
   web:
+    image: web:latest
     container_name: web
     build:
       context: .
@@ -12,6 +13,7 @@ services:
     networks:
       - app_network
   docs:
+    image: docs:latest
     container_name: docs
     build:
       context: .

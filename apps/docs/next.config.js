@@ -2,4 +2,5 @@
 module.exports = {
   transpilePackages: ["@repo/ui"],
   output: "standalone",
+  basePath: "/docs",
 };
